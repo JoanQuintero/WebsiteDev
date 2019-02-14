@@ -1,0 +1,93 @@
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+body{
+    background-color: #889093;
+    background-image: url(images/back.jpg);
+    background-size: cover;
+    height: 100vh;
+    padding: 5vh 2% 2% 2%;
+    position: static;
+    border: 3px solid #73AD21;
+}
+
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.container {
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+#message {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+#message p {
+    padding: 10px 35px;
+    font-size: 18px;
+}
+
+.valid {
+    color: green;
+}
+
+.valid:before {
+    position: relative;
+    left: -35px;
+    content: 'All set \219D';
+    color: blue;
+}
+
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    position: relative;
+    left: -35px;
+    content: 'missing \219D';
+    /*justify-content: inherit;*/
+    text-decoration-style: bold;
+}
+
+@media screen and (min-width: 600px)
+{
+    main
+    {
+        width: 60%;
+        float: left;
+    }
+}
+
+@media handheld and (min-width: 20px)
+{
+    main
+    {
+        width: 60%;
+        float: none;
+    }
+}
+
+
+
+
+
+
+
+

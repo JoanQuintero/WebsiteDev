@@ -1,0 +1,156 @@
+*{   
+		margin: 0;
+		padding: 0;
+}
+
+#under{
+	color: white;
+}
+body{
+	background-color: #889093;
+	background-image: url(images/background.jpg);
+	background-size: cover;
+	height: 100vh;
+	padding: 5vh 2% 2% 2%;
+	position: static;
+    border: 3px solid #73AD21;
+}
+
+aside{
+    margin-left: 5em;
+    color: white;
+}
+aside.hover{
+    background-color: #3362FF;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+	background-color: black;
+	opacity: 0.9;
+    display: inline-block;
+    color: white;
+    text-decoration: bold;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/*li a:hover, .dropdown:hover .dropbtn {
+    background-color: #3362FF;
+}*/
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px;
+    color: blue;
+    z-index: 1;
+    opacity: 0.8;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    opacity: 1;
+
+}
+
+.dropdown-content a:hover {background-color: white; color: black;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+#showcase{
+	background-color: #889093;
+	background-image: url(images/mainback.png);
+	position: static;
+	background-size: cover;
+	height: 23vh;
+	padding: 5vh 2% 0.01% 2%;
+    border: 3px solid #73AD21;
+}
+
+
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url(images/searchicon.jpeg);
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 2px 20px 2px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
+
+
+<form>
+  <input type="text" name="search" placeholder="Search...">
+</form>
+footer{
+    position: 0;
+    padding: .75em;
+    clear: both;
+    background-color: silver;
+}
+
+address{
+    padding: .2em;
+}
+
+.center{
+    text-align: center;
+}
+
+img{
+	max-width: 50%;
+}
+
+@media screen and (min-width: 600px)
+{
+	main
+	{
+		width: 60%;
+		float: left;
+	}
+}
+
+@media handheld and (min-width: 20px)
+{
+	main
+	{
+		width: 60%;
+		float: none;
+	}
+}
